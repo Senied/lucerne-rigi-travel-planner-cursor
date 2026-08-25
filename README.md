@@ -1,21 +1,19 @@
-# Lucerne & Central Switzerland Travel Planner
+# Lucerne & Central Switzerland Travel Guide
 
-A responsive trip-planning website and full guide for Lucerne, Lake Lucerne, Rigi, Pilatus, Titlis, Stoos, Stanserhorn, Bürgenstock and additional Central Switzerland excursions.
+A practical, responsive guide to Lucerne, Lake Lucerne and the surrounding mountains, towns and landscapes.
 
-## Current traveler files
+## Start planning
 
-- [Website](index.html)
+- [Journey overview](index.html)
 - [Interactive guide](guide/index.html)
 - [Printable guide](guide/Lucerne_Central_Switzerland_Travel_Guide_2026.pdf)
 
-The website presents the current guide without technical labels or version language. Earlier editions remain available through the quiet “Earlier editions” section and are preserved in `releases/`.
+## Inside the guide
 
-## Open locally
+- Seven detailed day plans for Lucerne, Rigi, Pilatus, Bürgenstock, Stanserhorn, Titlis and Stoos
+- Forty-one further excursions across Central Switzerland and nearby regions
+- Route comparisons, accommodation ideas, transport guidance and realistic budget planning
+- Weather, access, booking and safety checks to make before each outing
+- Destination photographs and direct links to official travel information
 
-```powershell
-python -m http.server 18902 --bind 127.0.0.1
-```
-
-Then open `http://127.0.0.1:18902/`.
-
-The current guide is generated from the preserved expanded source by `scripts/build-traveler-guide.py`. Run `powershell -ExecutionPolicy Bypass -File scripts/verify-site.ps1` for repeatable static checks.
+Earlier interactive and printable editions remain available in the `releases` folder.

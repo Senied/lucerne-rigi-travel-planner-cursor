@@ -1,0 +1,8 @@
+{
+  "name": "lucerne-central-switzerland-travel-guide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-sites.mjs"
+  }
+}

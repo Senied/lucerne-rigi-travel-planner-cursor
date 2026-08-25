@@ -9,3 +9,4 @@ node_modules/
 __pycache__/
 _*.py
 tmp/
+dist/
