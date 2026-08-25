@@ -81,7 +81,7 @@
       img: "assets/images/responsive/module-city-1280.webp",
       srcset: imageSources("module-city", 1890),
       alt: "Lucerne old town and lake setting",
-      link: "guide/index.html#module-l1",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l1",
     },
     rigi: {
       tag: "Queen of the Mountains · Classic loop",
@@ -91,7 +91,7 @@
       img: "assets/images/responsive/module-rigi-1280.webp",
       srcset: imageSources("module-rigi", 1280),
       alt: "Rigi summit panorama above Lake Lucerne",
-      link: "guide/index.html#module-l2",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l2",
     },
     pilatus: {
       tag: "Golden Round Trip · Steepest cogwheel",
@@ -101,7 +101,7 @@
       img: "assets/images/responsive/module-pilatus-1280.webp",
       srcset: imageSources("module-pilatus", 3840),
       alt: "Pilatus summit above Central Switzerland",
-      link: "guide/index.html#module-l3",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l3",
     },
     titlis: {
       tag: "Engelberg · Construction-aware glacier day",
@@ -111,7 +111,7 @@
       img: "assets/images/responsive/module-titlis-1280.webp",
       srcset: imageSources("module-titlis", 3840),
       alt: "Mount Titlis alpine panorama",
-      link: "guide/index.html#module-l4",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l4",
     },
     stoos: {
       tag: "Fronalpstock · Ridge day",
@@ -121,7 +121,7 @@
       img: "assets/images/responsive/module-stoos-1280.webp",
       srcset: imageSources("module-stoos", 1280),
       alt: "Stoos ridge and alpine pasture terrain",
-      link: "guide/index.html#module-l5",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l5",
     },
     stanserhorn: {
       tag: "CabriO · Open-air ascent",
@@ -131,7 +131,7 @@
       img: "assets/images/responsive/module-stanserhorn-1280.webp",
       srcset: imageSources("module-stanserhorn", 1805),
       alt: "Stanserhorn summit and lake views",
-      link: "guide/index.html#module-l6",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l6",
     },
     burgenstock: {
       tag: "Hammetschwand · Lake terrace",
@@ -141,7 +141,7 @@
       img: "assets/images/responsive/module-burgenstock-1280.webp",
       srcset: imageSources("module-burgenstock", 1280),
       alt: "Bürgenstock above Lake Lucerne",
-      link: "guide/index.html#module-l7",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l7",
     },
   };
 
