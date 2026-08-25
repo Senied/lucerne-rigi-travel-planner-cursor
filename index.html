@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#EEF3F6" />
+  <meta name="description" content="Lucerne, Rigi and Central Switzerland Modular Travel Planner 2026 — version 1.0. Seven mountain day modules from a Lucerne lake base." />
+  <title>Lucerne — Modular Travel Planner 2026 · v1.0</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <a class="nav__brand" href="#top" aria-label="Lucerne home">Lucerne</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#journey">Journey</a>
+      <a href="#modules">Modules</a>
+      <a href="#verify">Verified</a>
+      <a href="#downloads">Downloads</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--ghost" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.html" target="_blank" rel="noopener">Open guide</a>
+      <a class="btn btn--solid" href="#downloads">Get the guide</a>
+    </div>
+    <button class="nav__menu" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="drawer" data-drawer hidden>
+    <a href="#journey">Journey</a>
+    <a href="#modules">Modules</a>
+    <a href="#verify">Verified</a>
+    <a href="#downloads">Downloads</a>
+    <a class="btn btn--solid" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.html" target="_blank" rel="noopener">Open interactive guide</a>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero__media" aria-hidden="true">
+        <img
+          src="assets/images/hero-lucerne.jpg"
+          alt=""
+          class="hero__img"
+          data-parallax
+          width="2400"
+          height="1600"
+          fetchpriority="high"
+        />
+        <div class="hero__veil"></div>
+      </div>
+      <div class="hero__content">
+        <p class="brand">Lucerne</p>
+        <h1>Lake, ridges, and the days between.</h1>
+        <p class="lede">A modular planner for Central Switzerland — Rigi, Pilatus, Titlis, Stoos, Stanserhorn and Bürgenstock — built around one lake base and clear GO / caution / NO-GO gates.</p>
+        <div class="hero__cta">
+          <a class="btn btn--solid btn--lg" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.html" target="_blank" rel="noopener">Open interactive guide</a>
+          <a class="btn btn--light btn--lg" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.pdf" download>Download 57-page PDF</a>
+        </div>
+      </div>
+      <div class="hero__meta" aria-hidden="true">
+        <span>2026</span>
+        <span>57 pages</span>
+        <span>7 modules</span>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <div class="section__head">
+        <p class="eyebrow">The arc</p>
+        <h2>One lake base. Seven mountain days.</h2>
+        <p class="support">Lucerne as the hub — then Rigi, Pilatus, Engelberg–Titlis, Stoos, Stanserhorn or Bürgenstock, each with its own GO / caution / NO-GO gates.</p>
+      </div>
+
+      <div class="timeline" data-timeline>
+        <div class="timeline__track" role="tablist" aria-label="Journey modules">
+          <button class="day is-active" role="tab" aria-selected="true" data-day="0" type="button">
+            <span class="day__date">L1</span>
+            <span class="day__name">City</span>
+          </button>
+          <button class="day" role="tab" aria-selected="false" data-day="1" type="button">
+            <span class="day__date">L2</span>
+            <span class="day__name">Rigi</span>
+          </button>
+          <button class="day" role="tab" aria-selected="false" data-day="2" type="button">
+            <span class="day__date">L3</span>
+            <span class="day__name">Pilatus</span>
+          </button>
+          <button class="day" role="tab" aria-selected="false" data-day="3" type="button">
+            <span class="day__date">L4</span>
+            <span class="day__name">Titlis</span>
+          </button>
+          <button class="day" role="tab" aria-selected="false" data-day="4" type="button">
+            <span class="day__date">L5</span>
+            <span class="day__name">Stoos</span>
+          </button>
+          <button class="day" role="tab" aria-selected="false" data-day="5" type="button">
+            <span class="day__date">L6</span>
+            <span class="day__name">Stanserhorn</span>
+          </button>
+          <button class="day" role="tab" aria-selected="false" data-day="6" type="button">
+            <span class="day__date">L7</span>
+            <span class="day__name">Bürgenstock</span>
+          </button>
+        </div>
+
+        <div class="timeline__stage" data-day-panel>
+          <figure class="timeline__figure">
+            <img src="assets/images/module-city.jpg" alt="Lucerne old town and lake setting" data-day-img width="1600" height="1067" />
+          </figure>
+          <div class="timeline__copy">
+            <p class="timeline__kicker" data-day-kicker>L1 · Lake base</p>
+            <h3 data-day-title>Lucerne city and lake</h3>
+            <p data-day-body>Chapel Bridge, the Reuss, Musegg Wall and the shoreline — the orientation day that makes every mountain loop readable.</p>
+            <p class="timeline__stay" data-day-stay>Base · Hotel Schweizerhof or Des Balances</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section modules" id="modules">
+      <div class="section__head">
+        <p class="eyebrow">Modular builder</p>
+        <h2>Compose the mountains, or take them one by one.</h2>
+        <p class="support">Seven self-contained day modules. Compatibility matrix. 2026 construction and seasonal gates written in plain language.</p>
+      </div>
+
+      <div class="module-board" data-modules>
+        <div class="module-board__list" role="tablist" aria-label="Travel modules">
+          <button class="mod is-active" role="tab" aria-selected="true" data-mod="city" type="button">
+            <span class="mod__id">L1</span>
+            <span class="mod__label">City</span>
+          </button>
+          <button class="mod" role="tab" aria-selected="false" data-mod="rigi" type="button">
+            <span class="mod__id">L2</span>
+            <span class="mod__label">Rigi</span>
+          </button>
+          <button class="mod" role="tab" aria-selected="false" data-mod="pilatus" type="button">
+            <span class="mod__id">L3</span>
+            <span class="mod__label">Pilatus</span>
+          </button>
+          <button class="mod" role="tab" aria-selected="false" data-mod="titlis" type="button">
+            <span class="mod__id">L4</span>
+            <span class="mod__label">Titlis</span>
+          </button>
+          <button class="mod" role="tab" aria-selected="false" data-mod="stoos" type="button">
+            <span class="mod__id">L5</span>
+            <span class="mod__label">Stoos</span>
+          </button>
+          <button class="mod" role="tab" aria-selected="false" data-mod="stanserhorn" type="button">
+            <span class="mod__id">L6</span>
+            <span class="mod__label">Stanserhorn</span>
+          </button>
+          <button class="mod" role="tab" aria-selected="false" data-mod="burgenstock" type="button">
+            <span class="mod__id">L7</span>
+            <span class="mod__label">Bürgenstock</span>
+          </button>
+        </div>
+
+        <article class="module-panel" data-mod-panel>
+          <div class="module-panel__media">
+            <img src="assets/images/module-city.jpg" alt="" data-mod-img width="1600" height="1067" />
+          </div>
+          <div class="module-panel__body">
+            <p class="module-panel__tag" data-mod-tag>Lake Lucerne · Orientation</p>
+            <h3 data-mod-title>Lucerne city and lake</h3>
+            <p data-mod-body>The waterfront and old town as a full day — bridges, walls, and lake light — or as the calm bookend around harder mountain circuits.</p>
+            <ul class="module-panel__facts" data-mod-facts>
+              <li>Chapel Bridge and Water Tower</li>
+              <li>Musegg Wall and Lion Monument</li>
+              <li>GO / caution / NO-GO gate included</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="atmosphere" aria-label="Destination atmosphere">
+      <img src="assets/images/atmosphere-lake.jpg" alt="Lake Lucerne with alpine peaks beyond" width="2000" height="1200" loading="lazy" />
+      <blockquote>
+        <p>Boats. Cogwheels. Ridges. One lake holding them all.</p>
+      </blockquote>
+    </section>
+
+    <section class="section verify" id="verify">
+      <div class="section__head">
+        <p class="eyebrow">Release gate</p>
+        <h2>Audited end to end.</h2>
+        <p class="support">First release in its own lineage. Browser, PDF, links, photos and a ten-role review panel — all PASS.</p>
+      </div>
+
+      <div class="stats" aria-label="Release metrics">
+        <div class="stat">
+          <span class="stat__value" data-count="57">0</span>
+          <span class="stat__label">PDF pages reviewed</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="21">0</span>
+          <span class="stat__label">Stable photo IDs</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="7">0</span>
+          <span class="stat__label">Standalone modules</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="101">0</span>
+          <span class="stat__label">External targets</span>
+        </div>
+      </div>
+
+      <div class="checks">
+        <div class="check is-pass">
+          <span class="check__mark" aria-hidden="true"></span>
+          <div>
+            <strong>Final release gate</strong>
+            <p>Browser · PDF · every-page visual · 10-role panel PASS</p>
+          </div>
+        </div>
+        <div class="check is-pass">
+          <span class="check__mark" aria-hidden="true"></span>
+          <div>
+            <strong>Photo provenance</strong>
+            <p>21 IDs with Commons source, licence, hash and occurrences</p>
+          </div>
+        </div>
+        <div class="check is-pass">
+          <span class="check__mark" aria-hidden="true"></span>
+          <div>
+            <strong>Link audit</strong>
+            <p>101 targets · hard failures 0 · 96 reachable · 5 rate-limited</p>
+          </div>
+        </div>
+        <div class="check is-pass">
+          <span class="check__mark" aria-hidden="true"></span>
+          <div>
+            <strong>Mobile QA</strong>
+            <p>Desktop, 390 px and 320 px — zero document overflow</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hashes" data-hashes>
+        <h3>Controlling SHA-256</h3>
+        <div class="hash" data-hash-row>
+          <div class="hash__meta">
+            <span class="hash__label">HTML guide</span>
+            <code class="hash__value">BED30602F55B364BEEDF05A200678F11609F8092C829EF7E084FC11939E11C35</code>
+          </div>
+          <button type="button" class="hash__copy" data-copy>Copy</button>
+        </div>
+        <div class="hash" data-hash-row>
+          <div class="hash__meta">
+            <span class="hash__label">PDF</span>
+            <code class="hash__value">71BCB949B70F9FDDCE36C7384282BF00800C58E417C7E022F5361001C9F14491</code>
+          </div>
+          <button type="button" class="hash__copy" data-copy>Copy</button>
+        </div>
+        <div class="hash" data-hash-row>
+          <div class="hash__meta">
+            <span class="hash__label">Complete bundle</span>
+            <code class="hash__value">13C7AD20D412A4AC4DF680E56944660FAB3C0CB4373C2A9C8E35961FD4E53073</code>
+          </div>
+          <button type="button" class="hash__copy" data-copy>Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section downloads" id="downloads">
+      <div class="section__head">
+        <p class="eyebrow">Package</p>
+        <h2>Everything you need.</h2>
+        <p class="support">Interactive guide, print PDF, photo provenance, QA evidence and checksums.</p>
+      </div>
+
+      <div class="dl-grid">
+        <a class="dl" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0_bundle.zip" download>
+          <span class="dl__kind">Primary</span>
+          <span class="dl__title">Complete verified bundle</span>
+          <span class="dl__meta">ZIP · full release package</span>
+        </a>
+        <a class="dl" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.pdf" download>
+          <span class="dl__kind">Print</span>
+          <span class="dl__title">57-page PDF</span>
+          <span class="dl__meta">A4 · visually inspected</span>
+        </a>
+        <a class="dl" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.html" target="_blank" rel="noopener">
+          <span class="dl__kind">Interactive</span>
+          <span class="dl__title">HTML guide</span>
+          <span class="dl__meta">Self-contained · modular builder</span>
+        </a>
+        <a class="dl" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0_photo_manifest.json" download>
+          <span class="dl__kind">Provenance</span>
+          <span class="dl__title">Photo ID manifest</span>
+          <span class="dl__meta">P001–P021 · Commons-verified</span>
+        </a>
+        <a class="dl" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0_QA_EVIDENCE.json" download>
+          <span class="dl__kind">Evidence</span>
+          <span class="dl__title">Complete QA record</span>
+          <span class="dl__meta">Browser · PDF · links · roles</span>
+        </a>
+        <a class="dl" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0_SHA256SUMS.txt" download>
+          <span class="dl__kind">Integrity</span>
+          <span class="dl__title">SHA-256 checksums</span>
+          <span class="dl__meta">Controlling hashes</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section caution" id="live-checks">
+      <div class="caution__inner">
+        <p class="eyebrow">Before departure</p>
+        <h2>Live checks still required.</h2>
+        <p class="support">Timetables, fares, closures, weather, lift and boat operation, ticket inventory and rooms remain live conditions. Titlis and Pilatus carry hard 2026 construction windows — regenerate journeys and recheck operators for your exact dates.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">Lucerne</div>
+    <p>Rigi &amp; Central Switzerland Modular Travel Planner 2026 · Released 24 August 2026</p>
+    <p class="footer__credit">Hero and lake photography via Wikimedia Commons; Rigi, Stoos and Bürgenstock module stills from the v1.0 guide photo bank (Commons-licensed). Full provenance in the photo manifest.</p>
+  </footer>
+
+  <div class="toast" data-toast hidden role="status" aria-live="polite">Copied</div>
+  <div class="mobile-bar" data-mobile-bar>
+    <a class="btn btn--solid" href="releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.html" target="_blank" rel="noopener">Open guide</a>
+    <a class="btn btn--ghost" href="#downloads">Downloads</a>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
