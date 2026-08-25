@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputRoot = path.resolve(root, "dist", "client");
+const serverRoot = path.resolve(root, "dist", "server");
 const expectedOutput = `${path.resolve(root, "dist")}${path.sep}`;
 
 if (!outputRoot.startsWith(expectedOutput) || outputRoot === path.resolve(root)) {
@@ -22,6 +23,8 @@ const publicEntries = [
 
 await rm(outputRoot, { recursive: true, force: true });
 await mkdir(outputRoot, { recursive: true });
+await rm(serverRoot, { recursive: true, force: true });
+await mkdir(serverRoot, { recursive: true });
 
 for (const entry of publicEntries) {
   const source = path.join(root, entry);
@@ -30,4 +33,9 @@ for (const entry of publicEntries) {
   await cp(source, destination, { recursive: sourceStat.isDirectory() });
 }
 
-console.log(`Prepared ${publicEntries.length} public entries in dist/client.`);
+await cp(
+  path.join(root, "worker", "index.js"),
+  path.join(serverRoot, "index.js"),
+);
+
+console.log(`Prepared ${publicEntries.length} public entries for hosting.`);
