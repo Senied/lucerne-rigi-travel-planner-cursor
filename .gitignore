@@ -8,3 +8,4 @@ node_modules/
 *.tmp
 __pycache__/
 _*.py
+tmp/

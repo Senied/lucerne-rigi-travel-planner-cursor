@@ -31,8 +31,8 @@
       body: "Boat, the world’s steepest cogwheel railway and the aerial descent — when every segment operates and seats are secured.",
       stay: "Check first · All segments and autumn aerial closures",
       img: "assets/images/responsive/module-pilatus-1280.webp",
-      srcset: imageSources("module-pilatus", 3840),
-      alt: "Pilatus summit above Central Switzerland",
+      srcset: imageSources("module-pilatus", 1674),
+      alt: "Pilatus summit panorama over Lake Lucerne",
     },
     {
       kicker: "Day 4 · High alpine",
@@ -40,8 +40,8 @@
       body: "A glacier day with important 2026 operating changes: rail replacement and Rotair limits affect capacity, access and timing.",
       stay: "Check first · Dated rail and Rotair changes",
       img: "assets/images/responsive/module-titlis-1280.webp",
-      srcset: imageSources("module-titlis", 3840),
-      alt: "Mount Titlis alpine panorama",
+      srcset: imageSources("module-titlis", 1920),
+      alt: "Titlis cable car crossing a snow-covered high-alpine slope",
     },
     {
       kicker: "Day 5 · Ridge walk",
@@ -58,8 +58,8 @@
       body: "CabriO open-top cableway and a composed Stans return — seasonal, reservation-aware and calmer than Titlis.",
       stay: "Regular season · 11 April–22 November 2026",
       img: "assets/images/responsive/module-stanserhorn-1280.webp",
-      srcset: imageSources("module-stanserhorn", 1805),
-      alt: "Stanserhorn summit and lake views",
+      srcset: imageSources("module-stanserhorn", 1280),
+      alt: "Open-top Stanserhorn CabriO above the green hillside",
     },
     {
       kicker: "Day 7 · Cliff path and lift",
@@ -81,7 +81,7 @@
       img: "assets/images/responsive/module-city-1280.webp",
       srcset: imageSources("module-city", 1890),
       alt: "Lucerne old town and lake setting",
-      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l1",
+      link: "guide/#day-lucerne",
     },
     rigi: {
       tag: "Queen of the Mountains · Classic loop",
@@ -91,7 +91,7 @@
       img: "assets/images/responsive/module-rigi-1280.webp",
       srcset: imageSources("module-rigi", 1280),
       alt: "Rigi summit panorama above Lake Lucerne",
-      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l2",
+      link: "guide/#day-rigi",
     },
     pilatus: {
       tag: "Golden Round Trip · Steepest cogwheel",
@@ -99,9 +99,9 @@
       body: "Three transport moods in one day — after seat reservations, operating status and autumn aerial closures are checked.",
       facts: ["Boat, cogwheel railway and aerial cableway", "Autumn maintenance changes some routes", "Reserve the cogwheel segment before committing the day"],
       img: "assets/images/responsive/module-pilatus-1280.webp",
-      srcset: imageSources("module-pilatus", 3840),
-      alt: "Pilatus summit above Central Switzerland",
-      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l3",
+      srcset: imageSources("module-pilatus", 1674),
+      alt: "Pilatus summit panorama over Lake Lucerne",
+      link: "guide/#day-pilatus",
     },
     titlis: {
       tag: "Engelberg · Construction-aware glacier day",
@@ -109,9 +109,9 @@
       body: "High-alpine spectacle with explicit 2026 mobility conditions — rail replacement and Rotair limits belong in the plan.",
       facts: ["Rail replacement: 7 September–1 November 2026", "Rotair changes: 17 August–11 December 2026", "Accessibility above Trübsee is date-dependent"],
       img: "assets/images/responsive/module-titlis-1280.webp",
-      srcset: imageSources("module-titlis", 3840),
-      alt: "Mount Titlis alpine panorama",
-      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l4",
+      srcset: imageSources("module-titlis", 1920),
+      alt: "Titlis cable car crossing a snow-covered high-alpine slope",
+      link: "guide/#day-titlis",
     },
     stoos: {
       tag: "Fronalpstock · Ridge day",
@@ -121,7 +121,7 @@
       img: "assets/images/responsive/module-stoos-1280.webp",
       srcset: imageSources("module-stoos", 1280),
       alt: "Stoos ridge and alpine pasture terrain",
-      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l5",
+      link: "guide/#day-stoos",
     },
     stanserhorn: {
       tag: "CabriO · Open-air ascent",
@@ -129,9 +129,9 @@
       body: "An open-top cableway day with village calm at the end — lighter than Titlis, still seasonal and reservation-aware.",
       facts: ["Regular season: 11 April–22 November 2026", "CabriO open-top cableway", "Stans village return"],
       img: "assets/images/responsive/module-stanserhorn-1280.webp",
-      srcset: imageSources("module-stanserhorn", 1805),
-      alt: "Stanserhorn summit and lake views",
-      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l6",
+      srcset: imageSources("module-stanserhorn", 1280),
+      alt: "Open-top Stanserhorn CabriO above the green hillside",
+      link: "guide/#day-stanserhorn",
     },
     burgenstock: {
       tag: "Hammetschwand · Lake terrace",
@@ -141,7 +141,7 @@
       img: "assets/images/responsive/module-burgenstock-1280.webp",
       srcset: imageSources("module-burgenstock", 1280),
       alt: "Bürgenstock above Lake Lucerne",
-      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_1.html#module-l7",
+      link: "guide/#day-burgenstock",
     },
   };
 

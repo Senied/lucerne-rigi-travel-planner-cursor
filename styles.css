@@ -1106,6 +1106,17 @@ button {
   margin-top: 0.85rem;
 }
 
+.earlier-edition__group {
+  margin-top: 1rem;
+}
+
+.earlier-edition__group > strong {
+  color: var(--ink);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .earlier-edition__links a {
   color: var(--alpine-deep);
   font-size: 0.84rem;
@@ -1123,6 +1134,10 @@ button {
 @media (min-width: 980px) {
   .dl-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dl-grid--formats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
