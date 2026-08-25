@@ -1,6 +1,6 @@
-# Lucerne — Modular Travel Planner 2026 · v1.0
+# Lucerne & Central Switzerland Travel Planner
 
-Premium release site for the Lucerne, Rigi and Central Switzerland Modular Travel Planner.
+A responsive travel planner for Lucerne, Lake Lucerne, Rigi, Pilatus, Titlis, Stoos, Stanserhorn and Bürgenstock.
 
 ## Open locally
 
@@ -11,8 +11,6 @@ python -m http.server 18902 --bind 127.0.0.1
 
 Then visit [http://127.0.0.1:18902/](http://127.0.0.1:18902/).
 
-## Controlling hashes
+The current interactive and printable guides live in `guide/`. The first edition remains unchanged in `releases/` and is available from the site under “Earlier edition.”
 
-- HTML: `BED30602F55B364BEEDF05A200678F11609F8092C829EF7E084FC11939E11C35`
-- PDF: `71BCB949B70F9FDDCE36C7384282BF00800C58E417C7E022F5361001C9F14491`
-- Bundle: `13C7AD20D412A4AC4DF680E56944660FAB3C0CB4373C2A9C8E35961FD4E53073`
+Run `powershell -ExecutionPolicy Bypass -File scripts/verify-site.ps1` for the repeatable static checks.

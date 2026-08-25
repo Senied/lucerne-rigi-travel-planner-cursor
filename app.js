@@ -1,190 +1,244 @@
 (() => {
+  "use strict";
+
+  const imageSources = (name, originalWidth) => {
+    const responsive = `assets/images/responsive/${name}-640.webp 640w, assets/images/responsive/${name}-1280.webp 1280w`;
+    return originalWidth > 1280 ? `${responsive}, assets/images/${name}.jpg ${originalWidth}w` : responsive;
+  };
+
   const DAYS = [
     {
-      kicker: "L1 · Lake base",
+      kicker: "Day 1 · Lake base",
       title: "Lucerne city and lake",
-      body: "Chapel Bridge, the Reuss, Musegg Wall and the shoreline — the orientation day that makes every mountain loop readable.",
-      stay: "Base · Hotel Schweizerhof or Des Balances",
-      img: "assets/images/module-city.jpg",
+      body: "Chapel Bridge, the Reuss, Musegg Wall and the shoreline — the orientation day that makes every mountain route easier to read.",
+      stay: "Best for · Arrival day or uncertain weather",
+      img: "assets/images/responsive/module-city-1280.webp",
+      srcset: imageSources("module-city", 1890),
       alt: "Lucerne old town and lake setting",
     },
     {
-      kicker: "L2 · Classic round trip",
+      kicker: "Day 2 · Classic round trip",
       title: "Rigi classic round trip",
-      body: "Boat, cogwheel and ridge air — the Queen of the Mountains loop, date-bound for the complete circuit through mid-October.",
-      stay: "Gate · 11 May–18 Oct for the full loop",
-      img: "assets/images/module-rigi.jpg",
+      body: "Boat, cogwheel and ridge air — the Queen of the Mountains loop, with the complete circuit available through mid-October.",
+      stay: "Best window · 11 May–18 October for the full loop",
+      img: "assets/images/responsive/module-rigi-1280.webp",
+      srcset: imageSources("module-rigi", 1280),
       alt: "Rigi summit panorama above the lake",
     },
     {
-      kicker: "L3 · Golden Round Trip",
+      kicker: "Day 3 · Golden Round Trip",
       title: "Pilatus Golden Round Trip",
-      body: "Boat, the world’s steepest cogwheel, and the aerial descent — only when every component operates and seats are secured.",
-      stay: "Gate · autumn Kriens aerial closure windows",
-      img: "assets/images/module-pilatus.jpg",
+      body: "Boat, the world’s steepest cogwheel railway and the aerial descent — when every segment operates and seats are secured.",
+      stay: "Check first · All segments and autumn aerial closures",
+      img: "assets/images/responsive/module-pilatus-1280.webp",
+      srcset: imageSources("module-pilatus", 3840),
       alt: "Pilatus summit above Central Switzerland",
     },
     {
-      kicker: "L4 · High alpine",
+      kicker: "Day 4 · High alpine",
       title: "Engelberg and Titlis",
-      body: "A glacier day with hard 2026 construction truth: rail replacement and Rotair limits change capacity, access and what counts as GO.",
-      stay: "Gate · 2026 rail and Rotair constraints",
-      img: "assets/images/module-titlis.jpg",
+      body: "A glacier day with important 2026 operating changes: rail replacement and Rotair limits affect capacity, access and timing.",
+      stay: "Check first · Dated rail and Rotair changes",
+      img: "assets/images/responsive/module-titlis-1280.webp",
+      srcset: imageSources("module-titlis", 3840),
       alt: "Mount Titlis alpine panorama",
     },
     {
-      kicker: "L5 · Ridge walk",
+      kicker: "Day 5 · Ridge walk",
       title: "Stoos and the Fronalpstock ridge",
-      body: "The steep funicular, then the Klingenstock–Fronalpstock ridge — weather and ticket windows decide whether it stays elegant.",
-      stay: "Gate · Peak Experience ticket validity",
-      img: "assets/images/module-stoos.jpg",
+      body: "The steep funicular, then the Klingenstock–Fronalpstock ridge — a rewarding choice for dry, stable weather.",
+      stay: "Best for · Hikers on a clear, calm day",
+      img: "assets/images/responsive/module-stoos-1280.webp",
+      srcset: imageSources("module-stoos", 1280),
       alt: "Stoos ridge and alpine pasture terrain",
     },
     {
-      kicker: "L6 · Open-top ascent",
+      kicker: "Day 6 · Open-top ascent",
       title: "Stanserhorn and Stans",
-      body: "CabriO open-top cableway and a composed Stans return — seasonal, reservation-aware, and deliberately calmer than Titlis.",
-      stay: "Season · 11 Apr–22 Nov 2026",
-      img: "assets/images/module-stanserhorn.jpg",
+      body: "CabriO open-top cableway and a composed Stans return — seasonal, reservation-aware and calmer than Titlis.",
+      stay: "Regular season · 11 April–22 November 2026",
+      img: "assets/images/responsive/module-stanserhorn-1280.webp",
+      srcset: imageSources("module-stanserhorn", 1805),
       alt: "Stanserhorn summit and lake views",
     },
     {
-      kicker: "L7 · Cliff elevator",
+      kicker: "Day 7 · Cliff path and lift",
       title: "Bürgenstock and Hammetschwand",
       body: "Lake terrace, cliff path and Europe’s highest outdoor elevator — a polished half-to-full day above the water.",
-      stay: "Mood · lake elegance after harder summits",
-      img: "assets/images/module-burgenstock.jpg",
+      stay: "Check first · Cliff path and lift operation",
+      img: "assets/images/responsive/module-burgenstock-1280.webp",
+      srcset: imageSources("module-burgenstock", 1280),
       alt: "Bürgenstock above Lake Lucerne",
     },
   ];
 
   const MODULES = {
     city: {
-      tag: "Lake Lucerne · Orientation",
+      tag: "Lake Lucerne · Easy first day",
       title: "Lucerne city and lake",
-      body: "The waterfront and old town as a full day — bridges, walls, and lake light — or as the calm bookend around harder mountain circuits.",
-      facts: [
-        "Chapel Bridge and Water Tower",
-        "Musegg Wall and Lion Monument",
-        "GO / caution / NO-GO gate included",
-      ],
-      img: "assets/images/module-city.jpg",
+      body: "The waterfront and old town as a full day — bridges, walls and lake light — or as a calm bookend around harder mountain routes.",
+      facts: ["Chapel Bridge and Water Tower", "Musegg Wall and Lion Monument", "Works in almost any weather"],
+      img: "assets/images/responsive/module-city-1280.webp",
+      srcset: imageSources("module-city", 1890),
+      alt: "Lucerne old town and lake setting",
+      link: "guide/index.html#module-l1",
     },
     rigi: {
       tag: "Queen of the Mountains · Classic loop",
       title: "Rigi classic round trip",
       body: "A composed boat-and-cogwheel circuit with ridge air at Kulm — elegant when the full loop is in season and connections hold.",
-      facts: [
-        "Complete loop window: 11 May–18 Oct 2026",
-        "Cogwheel continues later without full boat loop",
-        "SGV boat + Rigi day logistics",
-      ],
-      img: "assets/images/module-rigi.jpg",
+      facts: ["Complete loop: 11 May–18 October 2026", "Cogwheel services continue beyond the boat-loop season", "Allow extra time for the Weggis transfer"],
+      img: "assets/images/responsive/module-rigi-1280.webp",
+      srcset: imageSources("module-rigi", 1280),
+      alt: "Rigi summit panorama above Lake Lucerne",
+      link: "guide/index.html#module-l2",
     },
     pilatus: {
       tag: "Golden Round Trip · Steepest cogwheel",
       title: "Pilatus Golden Round Trip",
-      body: "Three transport moods in one day — only after seat reservation, component status and autumn aerial closures are checked.",
-      facts: [
-        "World’s steepest cogwheel segment",
-        "Kriens aerial maintenance windows in autumn 2026",
-        "Reserve before you commit the day",
-      ],
-      img: "assets/images/module-pilatus.jpg",
+      body: "Three transport moods in one day — after seat reservations, operating status and autumn aerial closures are checked.",
+      facts: ["Boat, cogwheel railway and aerial cableway", "Autumn maintenance changes some routes", "Reserve the cogwheel segment before committing the day"],
+      img: "assets/images/responsive/module-pilatus-1280.webp",
+      srcset: imageSources("module-pilatus", 3840),
+      alt: "Pilatus summit above Central Switzerland",
+      link: "guide/index.html#module-l3",
     },
     titlis: {
       tag: "Engelberg · Construction-aware glacier day",
       title: "Engelberg and Titlis",
-      body: "High alpine spectacle with explicit 2026 mobility gates — rail replacement and Rotair limits are part of the plan, not footnotes.",
-      facts: [
-        "Rail replacement 7 Sep–1 Nov 2026",
-        "Rotair closed 17 Aug–11 Dec 2026",
-        "Hard Trübsee limits for some travellers",
-      ],
-      img: "assets/images/module-titlis.jpg",
+      body: "High-alpine spectacle with explicit 2026 mobility conditions — rail replacement and Rotair limits belong in the plan.",
+      facts: ["Rail replacement: 7 September–1 November 2026", "Rotair changes: 17 August–11 December 2026", "Accessibility above Trübsee is date-dependent"],
+      img: "assets/images/responsive/module-titlis-1280.webp",
+      srcset: imageSources("module-titlis", 3840),
+      alt: "Mount Titlis alpine panorama",
+      link: "guide/index.html#module-l4",
     },
     stoos: {
       tag: "Fronalpstock · Ridge day",
       title: "Stoos and the Fronalpstock ridge",
-      body: "Steepest funicular, then a ridge that rewards clear weather — ticket windows and wind decide the day.",
-      facts: [
-        "Stoos funicular ascent",
-        "Klingenstock–Fronalpstock ridge hike",
-        "Peak Experience ticket validity window",
-      ],
-      img: "assets/images/module-stoos.jpg",
+      body: "The steep funicular followed by a ridge that rewards clear weather — wind, trail condition and ticket validity decide the day.",
+      facts: ["Stoos funicular ascent", "Klingenstock–Fronalpstock ridge hike", "Dry footing and stable visibility are essential"],
+      img: "assets/images/responsive/module-stoos-1280.webp",
+      srcset: imageSources("module-stoos", 1280),
+      alt: "Stoos ridge and alpine pasture terrain",
+      link: "guide/index.html#module-l5",
     },
     stanserhorn: {
       tag: "CabriO · Open-air ascent",
       title: "Stanserhorn and Stans",
       body: "An open-top cableway day with village calm at the end — lighter than Titlis, still seasonal and reservation-aware.",
-      facts: [
-        "Regular season 11 Apr–22 Nov 2026",
-        "CabriO open-top segment",
-        "Stans village return",
-      ],
-      img: "assets/images/module-stanserhorn.jpg",
+      facts: ["Regular season: 11 April–22 November 2026", "CabriO open-top cableway", "Stans village return"],
+      img: "assets/images/responsive/module-stanserhorn-1280.webp",
+      srcset: imageSources("module-stanserhorn", 1805),
+      alt: "Stanserhorn summit and lake views",
+      link: "guide/index.html#module-l6",
     },
     burgenstock: {
       tag: "Hammetschwand · Lake terrace",
       title: "Bürgenstock and Hammetschwand",
-      body: "Cliff path, outdoor elevator and lake polish — the day that restores elegance after harder summits.",
-      facts: [
-        "Bürgenstock above the lake",
-        "Hammetschwand Lift",
-        "Half-day or composed full day",
-      ],
-      img: "assets/images/module-burgenstock.jpg",
+      body: "Cliff path, outdoor elevator and lake polish — an elegant choice after harder summits, when the route is officially open.",
+      facts: ["Catamaran and funicular approach", "Cliff Walk and Hammetschwand Lift", "Half-day or composed full day"],
+      img: "assets/images/responsive/module-burgenstock-1280.webp",
+      srcset: imageSources("module-burgenstock", 1280),
+      alt: "Bürgenstock above Lake Lucerne",
+      link: "guide/index.html#module-l7",
     },
   };
 
   const nav = document.querySelector("[data-nav]");
   const menuToggle = document.querySelector("[data-menu-toggle]");
   const drawer = document.querySelector("[data-drawer]");
-  const toast = document.querySelector("[data-toast]");
   const parallax = document.querySelector("[data-parallax]");
   const mobileBar = document.querySelector("[data-mobile-bar]");
+
+  const closeMenu = ({ restoreFocus = false } = {}) => {
+    if (!nav || !menuToggle || !drawer) return;
+    nav.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open menu");
+    drawer.hidden = true;
+    if (restoreFocus) menuToggle.focus();
+  };
+
+  const openMenu = () => {
+    if (!nav || !menuToggle || !drawer) return;
+    nav.classList.add("is-open");
+    menuToggle.setAttribute("aria-expanded", "true");
+    menuToggle.setAttribute("aria-label", "Close menu");
+    drawer.hidden = false;
+    requestAnimationFrame(() => drawer.querySelector("a")?.focus());
+  };
+
+  if (menuToggle && drawer) {
+    menuToggle.addEventListener("click", () => {
+      const open = menuToggle.getAttribute("aria-expanded") === "true";
+      if (open) closeMenu({ restoreFocus: true });
+      else openMenu();
+    });
+    drawer.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => closeMenu()));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") {
+        closeMenu({ restoreFocus: true });
+      }
+    });
+    document.addEventListener("pointerdown", (event) => {
+      if (menuToggle.getAttribute("aria-expanded") !== "true") return;
+      if (!nav.contains(event.target) && !drawer.contains(event.target)) closeMenu();
+    });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 900) closeMenu();
+    });
+  }
 
   const onScroll = () => {
     if (!nav) return;
     const y = window.scrollY;
     nav.classList.toggle("is-solid", y > 24);
     if (mobileBar) {
-      const heroH = Math.max(320, window.innerHeight * 0.72);
-      mobileBar.classList.toggle("is-visible", y > heroH);
+      const heroHeight = Math.max(320, window.innerHeight * 0.72);
+      mobileBar.classList.toggle("is-visible", y > heroHeight);
     }
   };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  if (menuToggle && drawer) {
-    menuToggle.addEventListener("click", () => {
-      const open = !nav.classList.contains("is-open");
-      nav.classList.toggle("is-open", open);
-      menuToggle.setAttribute("aria-expanded", String(open));
-      drawer.hidden = !open;
-    });
-    drawer.querySelectorAll("a").forEach((a) => {
-      a.addEventListener("click", () => {
-        nav.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        drawer.hidden = true;
+  if (parallax && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    window.addEventListener("scroll", () => {
+      const y = Math.min(window.scrollY, 600);
+      parallax.style.transform = `scale(1.06) translate3d(0, ${y * 0.18}px, 0)`;
+    }, { passive: true });
+  }
+
+  const wireTablist = (buttons, activate) => {
+    buttons.forEach((button, index) => {
+      button.addEventListener("click", () => activate(index));
+      button.addEventListener("keydown", (event) => {
+        let nextIndex = null;
+        if (event.key === "ArrowRight") nextIndex = (index + 1) % buttons.length;
+        if (event.key === "ArrowLeft") nextIndex = (index - 1 + buttons.length) % buttons.length;
+        if (event.key === "Home") nextIndex = 0;
+        if (event.key === "End") nextIndex = buttons.length - 1;
+        if (nextIndex === null) return;
+        event.preventDefault();
+        activate(nextIndex);
+        buttons[nextIndex].focus();
       });
     });
-  }
+  };
 
-  if (parallax && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    window.addEventListener(
-      "scroll",
-      () => {
-        const y = Math.min(window.scrollY, 600);
-        parallax.style.transform = `scale(1.06) translate3d(0, ${y * 0.18}px, 0)`;
-      },
-      { passive: true }
-    );
-  }
+  const swapImage = (image, item) => {
+    if (!image) return;
+    image.classList.add("is-swap");
+    window.setTimeout(() => {
+      image.src = item.img;
+      image.srcset = item.srcset;
+      image.alt = item.alt;
+      image.classList.remove("is-swap");
+    }, 180);
+  };
 
   const dayButtons = [...document.querySelectorAll("[data-day]")];
+  const dayPanel = document.querySelector("[data-day-panel]");
   const dayImg = document.querySelector("[data-day-img]");
   const dayKicker = document.querySelector("[data-day-kicker]");
   const dayTitle = document.querySelector("[data-day-title]");
@@ -194,156 +248,60 @@
   const setDay = (index) => {
     const day = DAYS[index];
     if (!day) return;
-    dayButtons.forEach((btn, i) => {
-      const on = i === index;
-      btn.classList.toggle("is-active", on);
-      btn.setAttribute("aria-selected", String(on));
+    dayButtons.forEach((button, buttonIndex) => {
+      const selected = buttonIndex === index;
+      button.classList.toggle("is-active", selected);
+      button.setAttribute("aria-selected", String(selected));
+      button.tabIndex = selected ? 0 : -1;
     });
-    dayKicker.textContent = day.kicker;
-    dayTitle.textContent = day.title;
-    dayBody.textContent = day.body;
-    dayStay.textContent = day.stay;
-    if (dayImg) {
-      dayImg.classList.add("is-swap");
-      window.setTimeout(() => {
-        dayImg.src = day.img;
-        dayImg.alt = day.alt;
-        dayImg.classList.remove("is-swap");
-      }, 180);
-    }
+    dayPanel?.setAttribute("aria-labelledby", dayButtons[index].id);
+    if (dayKicker) dayKicker.textContent = day.kicker;
+    if (dayTitle) dayTitle.textContent = day.title;
+    if (dayBody) dayBody.textContent = day.body;
+    if (dayStay) dayStay.textContent = day.stay;
+    swapImage(dayImg, day);
   };
-
-  dayButtons.forEach((btn) => {
-    btn.addEventListener("click", () => setDay(Number(btn.dataset.day)));
-  });
+  wireTablist(dayButtons, setDay);
 
   const modButtons = [...document.querySelectorAll("[data-mod]")];
+  const modPanel = document.querySelector("[data-mod-panel]");
   const modImg = document.querySelector("[data-mod-img]");
   const modTag = document.querySelector("[data-mod-tag]");
   const modTitle = document.querySelector("[data-mod-title]");
   const modBody = document.querySelector("[data-mod-body]");
   const modFacts = document.querySelector("[data-mod-facts]");
+  const modLink = document.querySelector("[data-mod-link]");
 
-  const setMod = (key) => {
-    const mod = MODULES[key];
-    if (!mod) return;
-    modButtons.forEach((btn) => {
-      const on = btn.dataset.mod === key;
-      btn.classList.toggle("is-active", on);
-      btn.setAttribute("aria-selected", String(on));
+  const setMod = (index) => {
+    const button = modButtons[index];
+    const mod = MODULES[button?.dataset.mod];
+    if (!button || !mod) return;
+    modButtons.forEach((item, buttonIndex) => {
+      const selected = buttonIndex === index;
+      item.classList.toggle("is-active", selected);
+      item.setAttribute("aria-selected", String(selected));
+      item.tabIndex = selected ? 0 : -1;
     });
-    modTag.textContent = mod.tag;
-    modTitle.textContent = mod.title;
-    modBody.textContent = mod.body;
-    modFacts.innerHTML = mod.facts.map((f) => `<li>${f}</li>`).join("");
-    if (modImg) {
-      modImg.classList.add("is-swap");
-      window.setTimeout(() => {
-        modImg.src = mod.img;
-        modImg.classList.remove("is-swap");
-      }, 180);
-    }
+    modPanel?.setAttribute("aria-labelledby", button.id);
+    if (modTag) modTag.textContent = mod.tag;
+    if (modTitle) modTitle.textContent = mod.title;
+    if (modBody) modBody.textContent = mod.body;
+    if (modFacts) modFacts.innerHTML = mod.facts.map((fact) => `<li>${fact}</li>`).join("");
+    if (modLink) modLink.href = mod.link;
+    swapImage(modImg, mod);
   };
+  wireTablist(modButtons, setMod);
 
-  modButtons.forEach((btn) => {
-    btn.addEventListener("click", () => setMod(btn.dataset.mod));
-  });
-
-  const counters = [...document.querySelectorAll("[data-count]")];
-  const animateCount = (el) => {
-    const target = Number(el.dataset.count);
-    const duration = 1100;
-    const start = performance.now();
-    const step = (now) => {
-      const t = Math.min(1, (now - start) / duration);
-      const eased = 1 - Math.pow(1 - t, 3);
-      el.textContent = String(Math.round(target * eased));
-      if (t < 1) requestAnimationFrame(step);
-    };
-    requestAnimationFrame(step);
-  };
+  document.querySelectorAll(".section__head, .timeline, .module-board, .practical-grid, .dl-grid, .earlier-edition, .caution__inner").forEach((element) => element.classList.add("reveal"));
 
   if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          animateCount(entry.target);
-          obs.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.5 }
-    );
-    counters.forEach((el) => io.observe(el));
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("is-in");
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
   } else {
-    counters.forEach(animateCount);
-  }
-
-  document
-    .querySelectorAll(".section__head, .timeline, .module-board, .stats, .checks, .hashes, .dl-grid, .caution__inner")
-    .forEach((el) => el.classList.add("reveal"));
-
-  if ("IntersectionObserver" in window) {
-    const revealIo = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("is-in");
-        });
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
-    );
-    document.querySelectorAll(".reveal").forEach((el) => revealIo.observe(el));
-  } else {
-    document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-in"));
-  }
-
-  let toastTimer;
-  const showToast = (msg) => {
-    if (!toast) return;
-    toast.textContent = msg;
-    toast.hidden = false;
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => {
-      toast.hidden = true;
-    }, 1600);
-  };
-
-  document.querySelectorAll("[data-hash-row]").forEach((row) => {
-    const btn = row.querySelector("[data-copy]");
-    const value = row.querySelector(".hash__value");
-    if (!btn || !value) return;
-    btn.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(value.textContent.trim());
-        btn.textContent = "Copied";
-        btn.classList.add("is-done");
-        showToast("Hash copied");
-        setTimeout(() => {
-          btn.textContent = "Copy";
-          btn.classList.remove("is-done");
-        }, 1400);
-      } catch {
-        showToast("Copy failed");
-      }
-    });
-  });
-
-  const track = document.querySelector("[data-timeline]");
-  if (track) {
-    track.addEventListener("keydown", (e) => {
-      const active = dayButtons.findIndex((b) => b.classList.contains("is-active"));
-      if (e.key === "ArrowRight") {
-        e.preventDefault();
-        const next = Math.min(DAYS.length - 1, active + 1);
-        setDay(next);
-        dayButtons[next]?.focus();
-      }
-      if (e.key === "ArrowLeft") {
-        e.preventDefault();
-        const prev = Math.max(0, active - 1);
-        setDay(prev);
-        dayButtons[prev]?.focus();
-      }
-    });
+    document.querySelectorAll(".reveal").forEach((element) => element.classList.add("is-in"));
   }
 })();
