@@ -1,4 +1,4 @@
-/* Lucerne · Rigi · Central Switzerland — release site
+/* Lucerne · Rigi · Central Switzerland — travel planner
    Lake editorial · light · precise · expensive */
 
 :root {
@@ -31,8 +31,8 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--nav-h) + 1rem);
   scroll-padding-bottom: 5.5rem;
-  overflow-x: hidden;
 }
 
 body {
@@ -45,7 +45,6 @@ body {
     radial-gradient(900px 500px at 100% 0%, rgba(26, 85, 112, 0.07), transparent 55%),
     linear-gradient(180deg, #eef3f6 0%, var(--paper) 35%, #e8eef2 100%);
   line-height: 1.55;
-  overflow-x: hidden;
   padding-bottom: env(safe-area-inset-bottom);
 }
 
@@ -65,6 +64,11 @@ button {
   background: none;
   border: 0;
   cursor: pointer;
+}
+
+:where(a, button, summary, input):focus-visible {
+  outline: 3px solid #d2a65f;
+  outline-offset: 3px;
 }
 
 .skip {
@@ -101,6 +105,14 @@ button {
 .nav.is-solid {
   color: var(--ink);
   background: rgba(245, 247, 244, 0.82);
+  backdrop-filter: saturate(140%) blur(16px);
+  -webkit-backdrop-filter: saturate(140%) blur(16px);
+  border-bottom-color: var(--line);
+}
+
+.nav.is-open {
+  color: var(--ink);
+  background: rgba(245, 247, 244, 0.96);
   backdrop-filter: saturate(140%) blur(16px);
   -webkit-backdrop-filter: saturate(140%) blur(16px);
   border-bottom-color: var(--line);
@@ -327,6 +339,44 @@ button {
     linear-gradient(90deg, rgba(10, 18, 16, 0.45) 0%, transparent 55%);
 }
 
+.photo-ref {
+  position: absolute;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.42rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 999px;
+  background: rgba(10, 24, 20, 0.78);
+  color: var(--white);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 5px 18px rgba(5, 15, 12, 0.2);
+  backdrop-filter: blur(8px);
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.photo-ref:hover {
+  background: rgba(10, 24, 20, 0.94);
+  border-color: rgba(255, 255, 255, 0.76);
+  transform: translateY(-1px);
+}
+
+.photo-ref:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.photo-ref--hero {
+  top: calc(var(--nav-h) + 1rem);
+  right: clamp(1.15rem, 4vw, 2rem);
+}
+
 .hero__content {
   position: relative;
   z-index: 1;
@@ -368,6 +418,38 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.hero__meta {
+  position: absolute;
+  z-index: 2;
+  right: clamp(1.15rem, 4vw, 2rem);
+  bottom: 1.65rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem 1rem;
+  max-width: min(72vw, 34rem);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__meta span + span {
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+@media (max-width: 520px) {
+  .hero__meta {
+    left: 1.15rem;
+    right: auto;
+    justify-content: flex-start;
+    max-width: calc(100% - 2.3rem);
+    font-size: 0.65rem;
+  }
 }
 
 @keyframes rise {
@@ -492,10 +574,17 @@ button {
 }
 
 .timeline__figure {
+  position: relative;
   margin: 0;
   aspect-ratio: 16 / 11;
   overflow: hidden;
   background: #d9e0da;
+}
+
+.timeline__figure .photo-ref,
+.module-panel__media .photo-ref {
+  left: 0.75rem;
+  bottom: 0.75rem;
 }
 
 .timeline__figure img {
@@ -619,6 +708,7 @@ button {
 }
 
 .module-panel__media {
+  position: relative;
   aspect-ratio: 16 / 11;
   overflow: hidden;
   background: #d5ddd7;
@@ -690,6 +780,23 @@ button {
   background: var(--alpine);
 }
 
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-top: 1.35rem;
+  padding-bottom: 0.18rem;
+  border-bottom: 1px solid currentColor;
+  color: var(--alpine-deep);
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.text-link:hover {
+  color: var(--water);
+}
+
 @media (min-width: 860px) {
   .module-panel {
     grid-template-columns: 1.2fr 0.9fr;
@@ -753,7 +860,69 @@ button {
   font-style: italic;
 }
 
-/* ---------- Verify ---------- */
+.photo-ref--atmosphere {
+  right: clamp(1rem, 3vw, 1.75rem);
+  bottom: clamp(1rem, 3vw, 1.75rem);
+}
+
+/* ---------- Before you go ---------- */
+
+.practical-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.practical-card {
+  min-width: 0;
+  padding: clamp(1.25rem, 3vw, 1.65rem);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.practical-card__number {
+  margin: 0 0 1.25rem;
+  color: var(--alpine);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.practical-card h3 {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.12;
+}
+
+.practical-card > p:not(.practical-card__number) {
+  margin: 0;
+  color: var(--stone);
+  font-size: 0.94rem;
+}
+
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin-top: 1.15rem;
+}
+
+.link-row a {
+  color: var(--alpine-deep);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+@media (min-width: 720px) {
+  .practical-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 .stats {
   display: grid;
@@ -954,6 +1123,46 @@ button {
 .dl__meta {
   color: var(--stone);
   font-size: 0.9rem;
+}
+
+.dl--featured {
+  border-color: rgba(26, 85, 112, 0.28);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.dl-grid--formats {
+  max-width: 48rem;
+}
+
+.earlier-edition {
+  max-width: 48rem;
+  margin-top: 1.25rem;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.earlier-edition summary {
+  width: fit-content;
+  color: var(--stone);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.earlier-edition__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.25rem;
+  margin-top: 0.85rem;
+}
+
+.earlier-edition__links a {
+  color: var(--alpine-deep);
+  font-size: 0.84rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 @media (min-width: 700px) {

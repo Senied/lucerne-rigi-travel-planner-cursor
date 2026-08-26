@@ -13,8 +13,12 @@
       body: "Chapel Bridge, the Reuss, Musegg Wall and the shoreline — the orientation day that makes every mountain route easier to read.",
       stay: "Best for · Arrival day or uncertain weather",
       img: "assets/images/responsive/module-city-1280.webp",
-      srcset: imageSources("module-city", 2400),
-      alt: "Lucerne Chapel Bridge and old-town waterfront",
+      srcset: imageSources("module-city", 1280),
+      alt: "Lucerne Old Town on the Reuss",
+      width: 1280,
+      height: 851,
+      photoId: "P002",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P002-O03",
     },
     {
       kicker: "Day 2 · Classic round trip",
@@ -22,8 +26,12 @@
       body: "Boat, cogwheel and ridge air — the Queen of the Mountains loop, with the complete circuit available through mid-October.",
       stay: "Best window · 11 May–18 October for the full loop",
       img: "assets/images/responsive/module-rigi-1280.webp",
-      srcset: imageSources("module-rigi", 1575),
-      alt: "Turquoise lake panorama from the Rigi ridge",
+      srcset: imageSources("module-rigi", 1280),
+      alt: "Rigi Kulm panorama",
+      width: 1280,
+      height: 952,
+      photoId: "P006",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P006-O02",
     },
     {
       kicker: "Day 3 · Golden Round Trip",
@@ -31,8 +39,12 @@
       body: "Boat, the world’s steepest cogwheel railway and the aerial descent — when every segment operates and seats are secured.",
       stay: "Check first · All segments and autumn aerial closures",
       img: "assets/images/responsive/module-pilatus-1280.webp",
-      srcset: imageSources("module-pilatus", 1674),
-      alt: "Lake Lucerne and Central Switzerland from Pilatus",
+      srcset: imageSources("module-pilatus", 1280),
+      alt: "Pilatus summit",
+      width: 1280,
+      height: 744,
+      photoId: "P010",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P010-O02",
     },
     {
       kicker: "Day 4 · High alpine",
@@ -40,8 +52,12 @@
       body: "A glacier day with important 2026 operating changes: rail replacement and Rotair limits affect capacity, access and timing.",
       stay: "Check first · Dated rail and Rotair changes",
       img: "assets/images/responsive/module-titlis-1280.webp",
-      srcset: imageSources("module-titlis", 1920),
-      alt: "Titlis cableway climbing the snow ridge",
+      srcset: imageSources("module-titlis", 1280),
+      alt: "Mount Titlis seen from Gross Spannort",
+      width: 1280,
+      height: 961,
+      photoId: "P013",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P013-O02",
     },
     {
       kicker: "Day 5 · Ridge walk",
@@ -49,8 +65,12 @@
       body: "The steep funicular, then the Klingenstock–Fronalpstock ridge — a rewarding choice for dry, stable weather.",
       stay: "Best for · Hikers on a clear, calm day",
       img: "assets/images/responsive/module-stoos-1280.webp",
-      srcset: imageSources("module-stoos", 2400),
-      alt: "Mythen peaks above cloud from the Stoos ridge",
+      srcset: imageSources("module-stoos", 1280),
+      alt: "Klingenstock-Fronalpstock ridge hike",
+      width: 1280,
+      height: 854,
+      photoId: "P017",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P017-O02",
     },
     {
       kicker: "Day 6 · Open-top ascent",
@@ -59,7 +79,11 @@
       stay: "Regular season · 11 April–22 November 2026",
       img: "assets/images/responsive/module-stanserhorn-1280.webp",
       srcset: imageSources("module-stanserhorn", 1280),
-      alt: "Stanserhorn CabriO open-top cableway",
+      alt: "Stanserhorn CabriO",
+      width: 1280,
+      height: 853,
+      photoId: "P020",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P020-O02",
     },
     {
       kicker: "Day 7 · Cliff path and lift",
@@ -67,8 +91,12 @@
       body: "Lake terrace, cliff path and Europe’s highest outdoor elevator — a polished half-to-full day above the water.",
       stay: "Check first · Cliff path and lift operation",
       img: "assets/images/responsive/module-burgenstock-1280.webp",
-      srcset: imageSources("module-burgenstock", 1920),
-      alt: "Bürgenstock Palace terrace above the lake",
+      srcset: imageSources("module-burgenstock", 1280),
+      alt: "Bürgenstock above the lake",
+      width: 1280,
+      height: 957,
+      photoId: "P018",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P018-O02",
     },
   ];
 
@@ -79,9 +107,13 @@
       body: "The waterfront and old town as a full day — bridges, walls and lake light — or as a calm bookend around harder mountain routes.",
       facts: ["Chapel Bridge and Water Tower", "Musegg Wall and Lion Monument", "Works in almost any weather"],
       img: "assets/images/responsive/module-city-1280.webp",
-      srcset: imageSources("module-city", 2400),
-      alt: "Lucerne Chapel Bridge and old-town waterfront",
-      link: "guide/index.html#module-l1",
+      srcset: imageSources("module-city", 1280),
+      alt: "Lucerne Old Town on the Reuss",
+      width: 1280,
+      height: 851,
+      photoId: "P002",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P002-O03",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#module-l1",
     },
     rigi: {
       tag: "Queen of the Mountains · Classic loop",
@@ -89,9 +121,13 @@
       body: "A composed boat-and-cogwheel circuit with ridge air at Kulm — elegant when the full loop is in season and connections hold.",
       facts: ["Complete loop: 11 May–18 October 2026", "Cogwheel services continue beyond the boat-loop season", "Allow extra time for the Weggis transfer"],
       img: "assets/images/responsive/module-rigi-1280.webp",
-      srcset: imageSources("module-rigi", 1575),
-      alt: "Turquoise lake panorama from the Rigi ridge",
-      link: "guide/index.html#module-l2",
+      srcset: imageSources("module-rigi", 1280),
+      alt: "Rigi Kulm panorama",
+      width: 1280,
+      height: 952,
+      photoId: "P006",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P006-O02",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#module-l2",
     },
     pilatus: {
       tag: "Golden Round Trip · Steepest cogwheel",
@@ -99,9 +135,13 @@
       body: "Three transport moods in one day — after seat reservations, operating status and autumn aerial closures are checked.",
       facts: ["Boat, cogwheel railway and aerial cableway", "Autumn maintenance changes some routes", "Reserve the cogwheel segment before committing the day"],
       img: "assets/images/responsive/module-pilatus-1280.webp",
-      srcset: imageSources("module-pilatus", 1674),
-      alt: "Lake Lucerne and Central Switzerland from Pilatus",
-      link: "guide/index.html#module-l3",
+      srcset: imageSources("module-pilatus", 1280),
+      alt: "Pilatus summit",
+      width: 1280,
+      height: 744,
+      photoId: "P010",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P010-O02",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#module-l3",
     },
     titlis: {
       tag: "Engelberg · Construction-aware glacier day",
@@ -109,9 +149,13 @@
       body: "High-alpine spectacle with explicit 2026 mobility conditions — rail replacement and Rotair limits belong in the plan.",
       facts: ["Rail replacement: 7 September–1 November 2026", "Rotair changes: 17 August–11 December 2026", "Accessibility above Trübsee is date-dependent"],
       img: "assets/images/responsive/module-titlis-1280.webp",
-      srcset: imageSources("module-titlis", 1920),
-      alt: "Titlis cableway climbing the snow ridge",
-      link: "guide/index.html#module-l4",
+      srcset: imageSources("module-titlis", 1280),
+      alt: "Mount Titlis seen from Gross Spannort",
+      width: 1280,
+      height: 961,
+      photoId: "P013",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P013-O02",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#module-l4",
     },
     stoos: {
       tag: "Fronalpstock · Ridge day",
@@ -119,9 +163,13 @@
       body: "The steep funicular followed by a ridge that rewards clear weather — wind, trail condition and ticket validity decide the day.",
       facts: ["Stoos funicular ascent", "Klingenstock–Fronalpstock ridge hike", "Dry footing and stable visibility are essential"],
       img: "assets/images/responsive/module-stoos-1280.webp",
-      srcset: imageSources("module-stoos", 2400),
-      alt: "Mythen peaks above cloud from the Stoos ridge",
-      link: "guide/index.html#module-l5",
+      srcset: imageSources("module-stoos", 1280),
+      alt: "Klingenstock-Fronalpstock ridge hike",
+      width: 1280,
+      height: 854,
+      photoId: "P017",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P017-O02",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#module-l5",
     },
     stanserhorn: {
       tag: "CabriO · Open-air ascent",
@@ -130,8 +178,12 @@
       facts: ["Regular season: 11 April–22 November 2026", "CabriO open-top cableway", "Stans village return"],
       img: "assets/images/responsive/module-stanserhorn-1280.webp",
       srcset: imageSources("module-stanserhorn", 1280),
-      alt: "Stanserhorn CabriO open-top cableway",
-      link: "guide/index.html#module-l6",
+      alt: "Stanserhorn CabriO",
+      width: 1280,
+      height: 853,
+      photoId: "P020",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P020-O02",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#module-l6",
     },
     burgenstock: {
       tag: "Hammetschwand · Lake terrace",
@@ -139,9 +191,13 @@
       body: "Cliff path, outdoor elevator and lake polish — an elegant choice after harder summits, when the route is officially open.",
       facts: ["Catamaran and funicular approach", "Cliff Walk and Hammetschwand Lift", "Half-day or composed full day"],
       img: "assets/images/responsive/module-burgenstock-1280.webp",
-      srcset: imageSources("module-burgenstock", 1920),
-      alt: "Bürgenstock Palace terrace above the lake",
-      link: "guide/index.html#module-l7",
+      srcset: imageSources("module-burgenstock", 1280),
+      alt: "Bürgenstock above the lake",
+      width: 1280,
+      height: 957,
+      photoId: "P018",
+      photoHref: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#photo-P018-O02",
+      link: "releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html#module-l7",
     },
   };
 
@@ -226,13 +282,20 @@
     });
   };
 
-  const swapImage = (image, item) => {
+  const swapImage = (image, item, photoRef) => {
     if (!image) return;
     image.classList.add("is-swap");
     window.setTimeout(() => {
       image.src = item.img;
       image.srcset = item.srcset;
       image.alt = item.alt;
+      image.width = item.width;
+      image.height = item.height;
+      if (photoRef) {
+        photoRef.href = item.photoHref;
+        photoRef.textContent = `${item.photoId} · Photo atlas`;
+        photoRef.setAttribute("aria-label", `Open ${item.photoId} details in the photo atlas`);
+      }
       image.classList.remove("is-swap");
     }, 180);
   };
@@ -244,6 +307,7 @@
   const dayTitle = document.querySelector("[data-day-title]");
   const dayBody = document.querySelector("[data-day-body]");
   const dayStay = document.querySelector("[data-day-stay]");
+  const dayPhoto = document.querySelector("[data-day-photo]");
 
   const setDay = (index) => {
     const day = DAYS[index];
@@ -259,7 +323,7 @@
     if (dayTitle) dayTitle.textContent = day.title;
     if (dayBody) dayBody.textContent = day.body;
     if (dayStay) dayStay.textContent = day.stay;
-    swapImage(dayImg, day);
+    swapImage(dayImg, day, dayPhoto);
   };
   wireTablist(dayButtons, setDay);
 
@@ -271,6 +335,7 @@
   const modBody = document.querySelector("[data-mod-body]");
   const modFacts = document.querySelector("[data-mod-facts]");
   const modLink = document.querySelector("[data-mod-link]");
+  const modPhoto = document.querySelector("[data-mod-photo]");
 
   const setMod = (index) => {
     const button = modButtons[index];
@@ -288,7 +353,7 @@
     if (modBody) modBody.textContent = mod.body;
     if (modFacts) modFacts.innerHTML = mod.facts.map((fact) => `<li>${fact}</li>`).join("");
     if (modLink) modLink.href = mod.link;
-    swapImage(modImg, mod);
+    swapImage(modImg, mod, modPhoto);
   };
   wireTablist(modButtons, setMod);
 
