@@ -136,7 +136,7 @@
   if (footer) {
     const links = document.createElement("div");
     links.className = "guide-footer-links";
-    links.innerHTML = '<a href="../index.html">Planner overview</a><a href="../releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.html">Earlier edition</a>';
+    links.innerHTML = '<a href="../index.html">Planner overview</a>';
     footer.append(links);
   }
 })();

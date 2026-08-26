@@ -86,3 +86,6 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* Visitor polish: hide internal photo ID chips */
+.photo-id{display:none!important}
