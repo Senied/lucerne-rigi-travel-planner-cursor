@@ -25,8 +25,17 @@
 
 :root{--green:#176155;--green2:#288072;--dark:#10271f;--gold:#c59a4b;--blue:#497f9d;--guide-footer:"Lucerne + Rigi · v1.0"}</style><style data-archive-polish="true">
 @media (max-width:1100px){
-  .sidebar nav{scrollbar-width:none;-ms-overflow-style:none}
+  .app-shell{grid-template-columns:minmax(0,1fr)!important}
+  .main,.cover,.cover-content{width:100%;min-width:0;max-width:100%}
+  .main{overflow-x:hidden}
+  .sidebar{flex-wrap:wrap}
+  .sidebar nav{display:flex!important;order:3;width:100%;gap:6px;margin:0;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none}
+  .sidebar nav a{flex:0 0 auto;border:1px solid rgba(255,255,255,.16);border-radius:8px}
   .sidebar nav::-webkit-scrollbar{display:none}
+  .cover-content{width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+  .cover h1{max-width:100%;overflow-wrap:anywhere}
+  .deck,.cover-meta,.cover-actions{max-width:100%}
+  .cover-actions .button-link{max-width:100%;white-space:normal}
 }
 </style></head>
 <body><div class="app"><aside class="sidebar"><div class="brand">Lucerne + Rigi<small>travel planner · earlier edition</small></div><div class="search"><input aria-label="Search this guide" id="guideSearch" placeholder="Search this guide" type="search"/><div aria-live="polite" class="search-status" id="searchStatus"></div></div><nav aria-label="Guide sections"><a href="#how-to-use">How to use</a><a href="#map">Map</a><a href="#plan-builder">Choose your days</a><a href="#compatibility">Day plans</a><a href="#plan-l1">Plan 1 City and lake</a><a href="#plan-l2">Plan 2 Rigi classic</a><a href="#plan-l3">Plan 3 Pilatus</a><a href="#plan-l4">Plan 4 Engelberg-TITLIS</a><a href="#plan-l5">Plan 5 Stoos ridge</a><a href="#plan-l6">Plan 6 Stanserhorn</a><a href="#plan-l7">Plan 7 Bürgenstock</a><a href="#hotels">Hotels</a><a href="#transport">Transport</a><a href="#localities">Place profiles</a><a href="#budget">Budget</a><a href="#safety">Safety</a><a href="#packing">Checklist</a><a href="#photography">Photography</a><a href="#all-links">All links</a></nav><div class="side-actions"><a class="pdf-link" href="Lucerne_Rigi_Modular_Travel_Planner_2026_v1_0.pdf">Open PDF</a><a href="#all-links">Every external link</a></div></aside><main class="main">
