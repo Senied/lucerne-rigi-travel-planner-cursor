@@ -18,7 +18,7 @@ const publicEntries = [
   "favicon.svg",
   "assets",
   "guide",
-  "releases"
+  "previous"
 ];
 
 await rm(outputRoot, { recursive: true, force: true });
