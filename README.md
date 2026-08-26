@@ -2,9 +2,9 @@
 
 A responsive 2026 travel guide for Lucerne, Lake Lucerne, Rigi, Pilatus, Titlis, Stoos, Stanserhorn, Bürgenstock and 41 additional excursions.
 
-## Current release: v1.2
+## Current release: v1.3
 
 - [Website](https://senied.github.io/lucerne-rigi-travel-planner-cursor/)
-- [Interactive guide](releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_2.html)
-- [Printable PDF](releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_2.pdf)
-- [Travel bundle](releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_2_bundle.zip)
+- [Interactive guide](releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.html)
+- [Printable PDF](releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3.pdf)
+- [Travel bundle](releases/Lucerne_Rigi_Modular_Travel_Planner_2026_v1_3_bundle.zip)
