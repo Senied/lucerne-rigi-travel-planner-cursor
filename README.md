@@ -1,6 +1,17 @@
-# Lucerne & Central Switzerland Travel Guide
+﻿# Lucerne & Central Switzerland Travel Planner
 
-## Links
+A responsive 2026 travel guide for Lucerne, Lake Lucerne, Rigi, Pilatus, Titlis, Stoos, Stanserhorn, Bürgenstock and related excursions.
 
-- Website: https://senied.github.io/Lucerne-Central-Switzerland-Travel-Guide-Codex-D/
-- Repository: https://github.com/Senied/Lucerne-Central-Switzerland-Travel-Guide-Codex-D
+## Open
+
+- [Website](https://senied.github.io/Lucerne-Central-Switzerland-Travel-Guide-Codex-D/)
+- [Interactive guide](guide/index.html)
+- [Printable PDF](guide/Lucerne_Central_Switzerland_Travel_Guide_2026.pdf)
+
+## Local
+
+```bash
+python -m http.server 18902
+```
+
+Then open `http://127.0.0.1:18902/`.
